@@ -1,0 +1,8 @@
+
+body {
+  height: 10%;
+  background-image: url("../img/Prototipo2.jpg");
+background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
