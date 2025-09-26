@@ -1,8 +1,9 @@
 
 body {
   height: 12%;
-  background-image: url("../img/Prototipo.jpg");
+  background-image: url("Prototipo.jpg");
 background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
 }
+
