@@ -1,0 +1,147 @@
+<!--Inicio Doc-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Web</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style3.css">
+  <link rel="stylesheet" href="css/style6.css">
+  <style>
+    /* Estilos solo para la galería de productos */
+    .productos {
+      display: flex;
+      width: 600px;
+      height: 430px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .productos img {
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .8;
+      transition: .5s ease;
+    }
+
+    .productos img:hover {
+      cursor: crosshair;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Encabezado principal -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" width="100" alt="Logo UsmeTours">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/nosotros.html">Nosotros</a></li>
+          <li><a href="pages/servicios.html">Servicios</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección de presentación -->
+    <section id="inicio" class="presentacion">
+  <div class="contenido-presentacion">
+    <h2>Bienvenido a <span>Usmetours</span></h2>
+    <p>En <strong>UsmeTours</strong>  Somos una familia de guías locales apasionados por Usme y su riqueza natural y cultural. 
+      Más que un tour, queremos que vivas una experiencia real, llena de historias auténticas, sabores únicos y la calidez de nuestra gente.
+       Únete a nosotros y descubre el Usme que solo los locales conocemos.</p>
+    <a href="#servicios" class="btn">Conoce nuestros servicios</a>
+  </div>
+    <div class="imagen-presentacion">
+    <img src="img/logo.png" alt="Animales felices">
+  </div>
+</section>
+
+    <!-- Sección sobre el equipo o la misión -->
+    <section id="nosotros">
+    <h2 class="titulo-nosotros">Sobre Nosotros</h2>
+    <div class="contenedor-nosotros">
+    <div class="card-nosotros">
+      <h3>Nuestra Historia</h3>
+      <p>Lo que queremos con Usmetour es simple: que conozcan Usme de verdad. Creamos una empresa de turismo con mi amigo para mostrar
+         la belleza de nuestra tierra y, a la vez, ayudar a nuestra gente. Diseñamos rutas únicas y sostenibles, trabajando con artesanos y emprendedores locales.
+        Para que todos pudieran conocernos, creamos una página web moderna, fácil de usar y con una estrategia digital bien pensada. Hoy, 
+        Usmetour es un referente en el turismo con propósito, atrayendo a visitantes que valoran lo auténtico y contribuyendo directamente al 
+        crecimiento de nuestra comunidad.</p>
+    </div>
+    <div class="card-nosotros">
+      <h3>Misión</h3>
+      <p>En Usmétour, nuestra misión es ser el puente entre los visitantes y la esencia vibrante, auténtica y diversa de Usme, 
+          una localidad rica en historia, cultura y naturaleza. Nos comprometemos a diseñar y ofrecer experiencias turísticas sostenibles, 
+          responsables y transformadoras, que no solo revelen la belleza y el valor del territorio, sino que empoderen a nuestras comunidades 
+          locales y fomenten su crecimiento económico y social. Aspiramos a generar un impacto positivo y duradero, asegurando que cada visita a 
+          Usme no solo sea una aventura memorable para el turista, sino también una oportunidad de desarrollo para nuestros habitantes</p>
+    </div>
+    <div class="card-nosotros">
+      <h3>Visión</h3>
+      <p>Nuestra vision es Llevar un sueño profundo en el alma: que cada persona que pise nuestra querida tierra de Usme se lleve mucho más que 
+          fotos en el celular. Queremos que se lleven la auténtica esencia de nuestro hogar metida en el corazón, vibrando con cada recuerdo. 
+          Nosotros no somos solo una empresa, somos ese amigo local que te abre la puerta de su casa, te toma de la mano para mostrarte los rincones más 
+          hermosos y te presenta a nuestra gente, tan cálida y genuina. Queremos compartirte esos secretos bien guardados de nuestra tierra que solo los 
+          que vivimos aquí conocemos.</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios">
+  <h2 class="titulo-servicios">Nuestros Servicios</h2>
+  <div class="contenedor-servicios">
+    <div class="card-servicio">
+      <img src="https://bogota.gov.co/sites/default/files/styles/1050px/public/field/image/suma2.jpg" alt="Imagen de Tours">
+      <h3>Tours auténticos </h3>
+      <p>Diseñamos rutas exclusivas para que descubras la riqueza cultural y natural de Usme, desde sus paisajes hasta sus tradiciones.</p>
+    </div>
+    <div class="card-servicio">
+      <img src="https://idpc.gov.co/wp-content/uploads/2023/11/logo-usme-negro.png" width="450"alt="Imagen de Experiencias comunitarias">
+      <h3>Experiencias comunitarias </h3>
+      <p>Te conectamos con artesanos, emprendedores y agricultores locales para que vivas la calidez y el espíritu de nuestra gente.</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Productos -->
+<div class="carousel-container">
+    <div class="carousel" id="carousel">
+        <div class="carousel-item active"><img src="img/carrusel.jpg" alt="Imagen 1"></div>
+        <div class="carousel-item"><img src="img/carrusel1.jpg" alt="Imagen 2"></div>
+        <div class="carousel-item"><img src="img/carusel.jpg" alt="Imagen 3"></div>
+    </div>
+    
+    <button class="carousel-control prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+    <button class="carousel-control next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+
+    <div class="carousel-indicators" id="indicators"></div>
+</div>
+
+  
+
+
+</body>
+
+<!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 UsmeTours - Todos los derechos reservados</p>
+    <p>Contacto: <a href="mailto:newhome123412@gmail.com">sbstnbonet@gmail.com</a></p>
+  </footer>
+
+    <script src="js/script.js"></script>
+</html>

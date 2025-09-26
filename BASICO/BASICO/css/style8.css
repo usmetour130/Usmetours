@@ -1,0 +1,233 @@
+/* ================================
+   RESET GENERAL
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   ESTILOS BASE
+   ================================ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3.9;
+  background-color: #e7e2e2;
+  color: #000000;
+  padding-top: 150px; /* espacio para el header fijo */
+}
+
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #3721b6;
+  transition: color 0.3s ease;
+}
+
+
+a:hover {
+  color: #000000;
+}
+
+
+/* ================================
+   HEADER Y NAVEGACIÓN
+   ================================ */
+header {
+  background: #000000;
+  color: #d504ff;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+nav ul li a {
+  color: #fab7f4;
+  font-weight: bold;
+}
+
+
+nav ul li a:hover {
+  color: a#080808;
+}
+
+
+/* ================================
+   SECCIONES PRINCIPALES
+   ================================ */
+#servicios {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+
+.titulo-servicios {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.card-servicio {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card-servicio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+
+.card-servicio .icono {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+
+.card-servicio h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+
+.card-servicio p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+
+
+/* Cada sección tendrá espacio entre sí */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* Títulos dentro de las secciones */
+section h2 {
+  margin-bottom: 10px;
+  color: #000000;
+  border-left: 5px solid #8852c5;
+  padding-left: 10px;
+}
+
+
+/* ================================
+   ARTÍCULOS Y CONTENIDO
+   ================================ */
+article {
+  margin-bottom: 20px;
+}
+
+
+article h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+
+article p {
+  text-align: justify;
+}
+
+
+/* ================================
+   ASIDE (contenidos adicionales)
+   ================================ */
+aside {
+  background: #22c579;
+  padding: 15px;
+  border-left: 4px solid #000000;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+footer {
+  text-align: center;
+  background: #0f0f0f;
+  color: #000000;
+  padding: 1500px;
+  margin-top: 40px;
+}
+
+
+footer p {
+  font-size: 0.9rem;
+}
+
+
+/* ================================
+   DISEÑO RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+
+  main {
+    padding: 10px;
+  }
+
+
+  section {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,477 @@
+
+/* ================================
+   RESET GENERAL
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   ESTILOS BASE 
+   ================================ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #4d1e1e;
+  color: #000000;
+  padding-top: 120px; /* espacio para el header fijo */
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00eeff;
+}
+
+/* ================================
+   HEADER Y NAVEGACIÓN
+   ================================ */
+header {
+  background: #504545;
+  color: #ffffff;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: oklab(100% 0 -0.00011);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #64d3db;
+}
+
+/* ================================
+   SECCIONES PRINCIPALES
+   ================================ */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px;
+}
+
+/* Cada sección tendrá espacio entre sí */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgb(255, 255, 255);
+}
+
+/* Títulos dentro de las secciones */
+section h2 {
+  margin-bottom: 15px;
+  color: #000000;
+  border-left: 5px solid #000000;
+  padding-left: 10px;
+}
+
+/* ================================
+   ARTÍCULOS Y CONTENIDO
+   ================================ */
+article {
+  margin-bottom: 20px;
+}
+
+article h3 {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+article p {
+  text-align: justify;
+}
+
+/* ================================
+   ASIDE (contenidos adicionales)
+   ================================ */
+aside {
+  background: #ffffff;
+  padding: 15px;
+  border-left: 4px solid #000000;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+/* ================================
+   DISEÑO RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+/* ================================
+   PRESENTACIÓN (Inicio)
+   ================================ */
+.presentacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #000000, #000000);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+.presentacion h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.presentacion h2 span {
+  color: #8852c5;
+}
+
+
+.presentacion p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+
+.presentacion .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #8852c5;
+  color: #000000;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+
+.presentacion .btn:hover {
+  background: #6a3ba1;
+}
+
+
+.imagen-presentacion img {
+  width: 150%;
+  max-width: 420px;
+  border-radius: 78px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+/* ================================
+   NOSOTROS
+   ================================ */
+#nosotros {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #979393,#8ac4e0);
+  text-align: center;
+}
+
+
+.titulo-nosotros {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+
+.contenedor-nosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.card-nosotros {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card-nosotros:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+
+.card-nosotros h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+
+.card-nosotros p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ================================
+   SECCIONES PRINCIPALES
+   ================================ */
+#servicios {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #979393,#8ac4e0);
+  text-align: center;
+}
+
+
+.titulo-servicios {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.card-servicio {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card-servicio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+
+.card-servicio .icono {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+
+.card-servicio h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+
+.card-servicio p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+
+
+/* Cada sección tendrá espacio entre sí */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* Títulos dentro de las secciones */
+section h2 {
+  margin-bottom: 10px;
+  color: #000000;
+  border-left: 5px solid #8852c5;
+  padding-left: 10px;
+}
+
+
+/* ================================
+   ARTÍCULOS Y CONTENIDO
+   ================================ */
+article {
+  margin-bottom: 20px;
+}
+
+
+article h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+
+article p {
+  text-align: justify;
+}
+
+
+/* ================================
+   ASIDE (contenidos adicionales)
+   ================================ */
+aside {
+  background: #22c579;
+  padding: 15px;
+  border-left: 4px solid #000000;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+
+
+
+/* ================================
+   DISEÑO RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+
+  main {
+    padding: 10px;
+  }
+
+
+  section {
+    padding: 15px;
+  }
+}
+/* ================================
+   PRESENTACIÓN (Inicio)
+   ================================ */
+.presentacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #979393,#8ac4e0);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+.presentacion h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.presentacion h2 span {
+  color: #8852c5;
+}
+
+
+.presentacion p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+
+.presentacion .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #8852c5;
+  color: #000000;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+
+.presentacion .btn:hover {
+  background: #6a3ba1;
+}
+
+
+.imagen-presentacion img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+footer {
+  text-align: center;
+  background: #3f3030;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+  margin: 100px -400px -100px -400px;
+
+}
+footer p {
+  font-size: 0.9rem;
+}
+
+
+    
